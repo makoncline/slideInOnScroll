@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  background: #000000;
+  font-family: 'helvetica sanserif';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  margin: 100px auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateX(-30%) scale(0.95);
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
